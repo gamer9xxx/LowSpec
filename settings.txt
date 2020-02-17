@@ -1,0 +1,16 @@
+
+[application]
+target_exe = heroesofthestorm_x64.exe
+
+[resolution]
+width = 640
+height = 480
+
+[rendering]
+decrease_mips = 0
+min_vertex_count = 500
+vertex_reduction_ratio = 1.000000
+
+[multi_core]
+testing_mode = 1
+multi_thread = 0
