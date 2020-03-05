@@ -3,14 +3,14 @@
 target_exe = heroesofthestorm_x64.exe
 
 [resolution]
-width = 0
-height = 0
+width = 640
+height = 480
 
 [rendering]
-decrease_mips = 0
-min_vertex_count = 130
-vertex_reduction_ratio = 1.0f
+texture_quality = 0.00000
+geometry_quality = 0.1500000
+decimation = 1
 
 [multi_core]
-testing_mode = 1
-multi_thread = 0
+testing_mode = 0
+multi_thread = 1
