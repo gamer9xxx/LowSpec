@@ -9,8 +9,4 @@ height = 480
 [rendering]
 texture_quality = 0.000000
 geometry_quality = 0.150000
-decimation = 1
-
-[multi_core]
-testing_mode = 0
 multi_thread = 1
