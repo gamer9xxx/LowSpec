@@ -7,6 +7,6 @@ width = 640
 height = 480
 
 [rendering]
-texture_quality = 0.500000
-geometry_quality = 0.150000
+texture_quality = 1.000000
+geometry_quality = 1.000000
 multi_thread = 1
