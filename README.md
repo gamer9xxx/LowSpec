@@ -2,7 +2,8 @@
 Since last year HOTS stopped supporting weaker PC configurations and some people were unable to play the game. For this reason I created a utility that improves the performance of the game and you can download it [here](https://github.com/gamer9xxx/LowSpec/archive/master.zip).
 
 I didn’t implement all optimizations that I wanted, but I can add them if there is the interest or if the devs could provide me a better access to the renderer since not all optimizations were possible to implement from “outside” (see [Devs Appendix](https://github.com/gamer9xxx/LowSpec/blob/master/README.md#devs-appendix)).
- At this moment, the utility can:
+
+At this moment, the utility can:
 - Decrease the texture quality more than the game offers (keys F6/F7 in game for increase/decrease).
 - Decrease the geometry quality more than the game offers (keys F8/F9 in game for increase/decrease). 
 - Decrease the screen resolution more than the game offers (see the utility user guide). 
