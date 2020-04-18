@@ -6,7 +6,7 @@ I didn’t implement all optimizations that I wanted, but I can add them if ther
 At this moment, the utility can:
 - Decrease the texture quality more than the game offers (keys F6/F7 in game for increase/decrease).
 - Decrease the geometry quality more than the game offers (keys F8/F9 in game for increase/decrease). 
-- Decrease the screen resolution more than the game offers (see the utility user guide). 
+- Decrease the screen resolution more than the game offers (see the user guide in the utility console window).
 - Switch between singlethreaded/multithreaded rendering (keys F11/F12 in game).
 
 There are many obvious bottlenecks like high poly models and high resolutions, which decreasing directly improves the performance, but degrades also the visual quality. Switching between singlethreaded/multithreaded rendering brings a huge speed up (my laptop gets 15-25% increase) with no visual quality los, but currently this works only on some integrated Intel graphics cards (you can try your luck with any graphics card, it will be probably just slower).
