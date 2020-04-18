@@ -53,6 +53,6 @@ The whole implementation took around 3-4 weeks counting writing own performance 
 
 # More questions?
 For any questions, feel free to contact me at gamer9xxx@gmail.com
-
+Or check the [Reddit](https://www.reddit.com/r/heroesofthestorm/comments/g3piro/i_reprogrammed_hots_so_you_can_play_it_on_a_poor/) comments.
 
 
