@@ -1,4 +1,4 @@
-# Lowering PC requirements for DX11 games
+# Lowering HW requirements for DX11 games
 Since last year HOTS stopped supporting weaker PC configurations and some people were unable to play the game. For this reason I created a utility that improves the performance of the game and you can download it [here].
 
 I didn’t implement all optimizations that I wanted, but I can add them if there is the interest or if the devs could provide me a better access to the renderer since not all optimizations were possible to implement from “outside” (see [Devs Appendix](https://github.com/gamer9xxx/LowSpec/blob/master/README.md#devs-appendix)).
