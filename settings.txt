@@ -7,6 +7,6 @@ width = 0
 height = 0
 
 [rendering]
-texture_quality = 0.500000
+texture_quality = 0.800000
 geometry_quality = 0.150000
 multi_thread = 0
