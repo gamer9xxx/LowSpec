@@ -1,7 +1,7 @@
 # LowSpec
 Since last year HOTS stopped supporting weaker PC configurations and some people were unable to play the game. For this reason I created a utility that improves the performance of the game and you can download it [here].
 
-I didn’t implement all optimizations that I wanted, but I can add them if there is the interest or if the devs could provide me a better access to the renderer since not all optimizations were possible to implement from “outside” (see Devs Appendix).
+I didn’t implement all optimizations that I wanted, but I can add them if there is the interest or if the devs could provide me a better access to the renderer since not all optimizations were possible to implement from “outside” (see [Devs Appendix](https://github.com/gamer9xxx/LowSpec/blob/master/README.md#devs-appendix)).
  At this moment, the utility can:
 - Decrease the texture quality more than the game offers (keys F6/F7 in game for increase/decrease).
 - Decrease the geometry quality more than the game offers (keys F8/F9 in game for increase/decrease). 
@@ -20,7 +20,7 @@ There are many obvious bottlenecks like high poly models and high resolutions, w
 
 “0.5 Texture quality” means that the texture mip-map level is biased by 5 levels and also switching to faster point filtering, while “1.0 Texture quality” means there is no mip-map level bias (therefore original texture quality) and it also uses original filtering.
   
-  
+# FAQ
 Is this some kind of hacking? Well, technically yes, but it doesn’t go any further than any your video recording program similar to FRAPS. When FRAPS connects to your game, it searches the DirectX library in your running game process and tells the DirectX to capture the last frame of your game and displays the additional fps info. My utility connects the game the same way as FRAPS and then just tells the DirectX to decrease the quality and/or to distribute the work over multiple cores.
 
 Is this allowed? Modifying software in general is illegal, but this utility does NOT modify any Blizzard software nor any assets, only communicates with the DirectX. The utility doesn’t even give you any game play advantage for cheating.
@@ -29,7 +29,7 @@ Will this work with the next game patch? Yes it will. The utility really doesn�
 
 I don’t want to install any crap! You don’t have to! The whole utility is just 182KB big, you can extract it anywhere you want and if you don’t like it, just delete it! That’s it! 
 
-Now the game looks like a crap, but you can also play it on a piece of crap! 
+Now the game looks like a crap, but you can also play it on a piece of crap!
 
 # Devs Appendix
 Optimizing this game without any source code is very time consuming and I decided to stop and simply ask for help either from the devs or some other hard core graphics programmers. The game is protected against debuggers and graphics profilers, so I had to write my own graphics analyzer and I discovered some spaces for optimizations without affecting the visual quality:
@@ -48,6 +48,7 @@ The whole implementation took around 3-4 weeks counting writing own performance 
 - Laptop Win10, 2.30GHz i7-3610QM, 16GB RAM, integrated Intel HD Graphics 4000
 - Desktop Win8, 3.4GHz i7-6700, 16GM RAM, GeForce GTX 745 (just to confirm that CPU is still bottleneck on lowest graphics settings on a better HW)
 
+# More questions?
 For any questions, feel free to contact me at gamer9xxx@gmail.com
 
 
