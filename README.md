@@ -22,11 +22,11 @@ There are many obvious bottlenecks like high poly models and high resolutions, w
 “0.5 Texture quality” means that the texture mip-map level is biased by 5 levels and also switching to faster point filtering, while “1.0 Texture quality” means there is no mip-map level bias (therefore original texture quality) and it also uses original filtering.
   
 # FAQ
-Is this some kind of hacking? Well, technically yes, but it doesn’t go any further than any your video recording program similar to FRAPS. When FRAPS connects to your game, it searches the DirectX library in your running game process and tells the DirectX to capture the last frame of your game and displays the additional fps info. My utility connects the game the same way as FRAPS and then just tells the DirectX to decrease the quality and/or to distribute the work over multiple cores.
+Is this some kind of hacking? Well, technically yes, but it doesn’t go any further than any your video recording program similar to FRAPS. When FRAPS connects to your game, it searches the DirectX library in your running game process and tells the DirectX to capture the last frame of your game and displays the additional fps info. My utility connects the game the same way as FRAPS and then just tells the DirectX to decrease the quality and/or to distribute the work over multiple cores. Because of this process, some antivirus programs might complain (e.g. Symantec warns about potential threat, while AVG and Nod32 are ok with it).
 
 Is this allowed? Modifying software in general is illegal, but this utility does NOT modify any Blizzard software nor any assets, only communicates with the DirectX. The utility doesn’t even give you any game play advantage for cheating.
 
-Will this work with the next game patch? Yes it will. The utility really doesn’t do anything else than communicates with the DirectX library. The DirectX is always the same on all the PCs. The only way to break the utility would be, if the game significantly reworks the renderer, which will probably not happen any soon.
+Will this work with the next game patch? Yes it will. The utility really doesn’t do anything else than communicates with the DirectX library. The DirectX is always the same on all the PCs. The only way to break the utility would be, if the game significantly reworks the renderer, like switching to DX12 or Vulkan.
 
 I don’t want to install any crap! You don’t have to! The whole utility is just 182KB big, you can extract it anywhere you want and if you don’t like it, just delete it! That’s it! 
 
