@@ -11,13 +11,12 @@ I didn’t implement all optimizations that I wanted, but I can add them if ther
 There are many obvious bottlenecks like high poly models and high resolutions, which decreasing directly improves the performance, but degrades also the visual quality. Switching between singlethreaded/multithreaded rendering brings a huge speed up (my laptop gets 15-25% increase) with no visual quality los, but currently this works only on some integrated Intel graphics cards (you can try your luck with any graphics card, it will be probably just slower).
 
 ![geometry_comparison](https://user-images.githubusercontent.com/11290866/79631249-9c755480-8160-11ea-8604-c0a879ace2bd.png)
-
 “0.15 Geometry quality” means that the game renders only 15% triangles of the original geometry, which is enormous reduction, while you can still clearly recognize all the characters. This is because HOTS doesn’t optimize the characters geometry for the game, but uses the same characters as for the menu and therefore all the characters have way more polygons than necessary. Fortunately I found a decimation algorithm that can reduce all the geometry with a nice quality on the background thread almost instantly, so it doesn’t even need file caching. However, it’s not perfect, as you can see some holes on Azmodan model.
   
   
 ![texture_comparison](https://user-images.githubusercontent.com/11290866/79631252-a434f900-8160-11ea-9c64-c553d6b80468.png)
-
 “0.5 Texture quality” means that the texture mip-map level is biased by 5 levels and also switching to faster point filtering, while “1.0 Texture quality” means there is no mip-map level bias (therefore original texture quality) and it also uses original filtering.
+  
   
 Is this some kind of hacking? Well, technically yes, but it doesn’t go any further than any your video recording program similar to FRAPS. When FRAPS connects to your game, it searches the DirectX library in your running game process and tells the DirectX to capture the last frame of your game and displays the additional fps info. My utility connects the game the same way as FRAPS and then just tells the DirectX to decrease the quality and/or to distribute the work over multiple cores.
 
