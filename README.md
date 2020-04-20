@@ -2,6 +2,7 @@
 Since last year HOTS stopped supporting weaker PC configurations and some people were unable to play the game. For this reason I created a utility that improves the performance of the game and you can download it [here](https://github.com/gamer9xxx/LowSpec/archive/master.zip).
 
 [Watch this video](https://www.youtube.com/watch?v=jhvLqepjniU) to see the result (you must enable CC/subtitles).
+[Check Reddit Comments](https://www.reddit.com/r/heroesofthestorm/comments/g3piro/i_reprogrammed_hots_so_you_can_play_it_on_a_poor/) for common questions.
 
 I didn’t implement all optimizations that I wanted, but I can add them if there is the interest or if the devs could provide me a better access to the renderer since not all optimizations were possible to implement from “outside” (see [Devs Appendix](https://github.com/gamer9xxx/LowSpec/blob/master/README.md#devs-appendix)).
 
@@ -59,7 +60,6 @@ The whole implementation took around 3-4 weeks counting writing own performance 
 3. If HOTS and the utility starts, but HOTS game crashes afterwards try it again. If it crashes everytime/often, use this special [LowSpecHangDetect](https://github.com/gamer9xxx/LowSpecHangDetect) version and send me the whole content of a log folder from this special version to my email. This version is extremly slow and will look like it freezes because it generates a lot of extra info (there is no sensitive info, just HW description and callstack in a text file that you can read) and I will try to fix it.
 
 # More questions?
-For any questions, feel free to contact me at gamer9xxx@gmail.com
-Or check the [Reddit](https://www.reddit.com/r/heroesofthestorm/comments/g3piro/i_reprogrammed_hots_so_you_can_play_it_on_a_poor/) comments.
+For any questions, feel free to contact me at gamer9xxx@gmail.com or check the [Reddit](https://www.reddit.com/r/heroesofthestorm/comments/g3piro/i_reprogrammed_hots_so_you_can_play_it_on_a_poor/) comments.
 
 
