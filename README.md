@@ -3,7 +3,7 @@ Since last year HOTS stopped supporting weaker PC configurations and some people
 
 [Watch this video](https://www.youtube.com/watch?v=jhvLqepjniU) to see the result (you must enable CC/subtitles).
 
-[Check Reddit Comments](https://www.reddit.com/r/heroesofthestorm/comments/g3piro/i_reprogrammed_hots_so_you_can_play_it_on_a_poor/) for common questions.
+[Check Reddit Comments](https://www.reddit.com/r/heroesofthestorm/comments/g3piro/i_reprogrammed_hots_so_you_can_play_it_on_a_poor/) for interesting discussions/suggestions.
 
 I didn’t implement all optimizations that I wanted, but I can add them if there is the interest or if the devs could provide me a better access to the renderer since not all optimizations were possible to implement from “outside” (see [Devs Appendix](https://github.com/gamer9xxx/LowSpec/blob/master/README.md#devs-appendix)).
 
