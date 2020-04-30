@@ -36,6 +36,24 @@ I don’t want to install any crap! You don’t have to! The whole utility is ju
 
 Now the game looks like a crap, but you can also play it on a piece of crap!
 
+# LowSpec 1.4 Patch Notes
+- Fixed crash at startup, game exit, device lost event (thank you very much for sending me the debug log files, I wouldn't fix it without it!).
+
+- Switching to Windows via Alt+Tab occasionally froze the application, it shouldn't happen anymore.
+
+- Improved custom screen resolution setting - no window mode switch is needed, no middle mouse button is needed, just set "width" and "height" in settings.txt in this utility, that's it.
+
+- "texture_quality" also downscales the internal terrain texture size (so it should be slightly faster and save more memory - thank you Ahli for the suggestion).
+
+- After pressing F11/F12 threading state, the state was forgotten after the game restart, now it's properly saved in settings.txt as all the other options.
+
+- Decreased default "texture_quality" from 0.8 to 0.7 and improved guide.
+
+# Modifying "variables.txt" HOTS user file, be aware
+Lowering TerrainTextureHiResCacheSize and TerrainTextureLowResCacheSize can be contraproductive because setting smaller cache means the cache system doesn't have enough space and has to load new tiles and remove old tiles more often as the camera moves, so I highly recommend to use the default values (simply remove the variables and it will be automatically reset). My utility automatically downscales also TerrainTextureSize proportinally with the "texture_quality", so you don't need to set this value neither (however it needs a game restart for the terrain quality to take effect).
+
+If you are changing screen resolution in variables.txt HOTS user file via width and height, this doesn't allow you to set the resolution lower than 1024x768 (at least it didn't work for me). My utility allows you to set 640x480 which is still playable and seems to have the biggest impact on the performance, so try it out (it allows you to go even lower e.g. 320x240 but the text is not readable anymore).
+
 # Devs Appendix
 Optimizing this game without any source code is very time consuming and I decided to stop and simply ask for help either from the devs or some other hard core graphics programmers. The game is protected against debuggers and graphics profilers, so I had to write my own graphics analyzer and I discovered some spaces for optimizations without affecting the visual quality:
 
