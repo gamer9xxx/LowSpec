@@ -36,6 +36,14 @@ I don’t want to install any crap! You don’t have to! The whole utility is ju
 
 Now the game looks like a crap, but you can also play it on a piece of crap!
 
+# LowSpec 1.6 Patch Notes
+
+- Improved FPS by reducing vertex processing
+
+- Fixed startup crash caused by missing DLL (thank you very much for sending me the screenshots, I wouldn't fix it without it!)
+
+- Multithreaded mode sometimes caused huge memory consumption when you switched to Windows via Alt+Tab
+
 # LowSpec 1.4 Patch Notes
 - Fixed crash at startup, game exit, device lost event (thank you very much for sending me the debug log files, I wouldn't fix it without it!).
 
